@@ -1,0 +1,167 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="1style.css">
+  <link rel="icon" href="https://i.pinimg.com/564x/81/ac/95/81ac95e4285a7b7b8f51ddad5ab29514.jpg" type="image/x-icon">
+  <title>Portfolio</title>
+</head>
+  <body class="dark-theme">
+    <header id="main">
+      <a href="#main">
+            <img src="foto/prtfl.png" class="logo" alt="my portfolio">
+      <nav class="navigation">
+        <ul>
+          <li><a href="#main">Главная</a></li>
+          <li><a href="#aboutme">Обо мне</a></li>
+          <li><a href="#cats">Котики</a></li>
+          <li><a href="#music">Музыка</a></li>
+          <li><a href="#contacts">Контакты</a> </li>
+        </ul>  
+      </nav>
+      </a>
+    </header>
+  <main>
+    <section class="theme-switcher">
+      <label for="themes-selector">Выберите тему:</label>
+      <select id="theme-selector">
+        <option value="light">Светлая тема</option>
+        <option value="dark">Тёмная тема</option>
+      </select>
+    </section>
+    <div class="aboutme" id="aboutme">
+      <ul>
+          <li class="post">
+            <img src="foto/myph.jpg" class="post-image">
+            <div class="post-content">
+              <p class="post-name">Мое имя-Алина</p>
+              <p class="description">Имя Алина имеет древние корни и встречается в разных культурах. Оно происходит от латинского слова *alere*, означающего "кормить" или "поддерживать", и может интерпретироваться как "благородная", "возвышенная". Алина — имя, связанное с добротой и утончённостью, и часто его обладательницы обладают чутким и творческим характером.
+                <span id="more-text" style="display: none;">
+                  В разных странах это имя также ассоциируется с светом и ясностью, что подчеркивает его позитивное значение. Алина часто воспринимается как символ гармонии и благородства, и нередко наделяется такими качествами, как умение вдохновлять и поддерживать окружающих. Это имя также связано с высокими моральными устоями, что делает его популярным среди тех, кто ценит честность и заботу о других.
+                </span>
+              </p>
+              <button id="show-more" >
+                Показать больше
+              </button>
+            <div>
+          </li>
+          <li class="post">
+            <img src="https://i.pinimg.com/564x/94/2a/c8/942ac825986e5a559e90d4fb30575612.jpg" class="post-image">
+            <div class="post-content">
+              <p class="post-name">Мне 19 лет</p>
+              <p class="description">День рождение у меня 7 августа.Родилась я в воскресенье(наверное поэтому,это мой любимый день недели)</p>
+            </div>
+          </li>
+          <li class="post">
+            <img src="https://i.pinimg.com/736x/3d/6b/52/3d6b52fa7400c3935e83acd1a1c1a5df.jpg" class="post-image">
+            <div class="post-content">
+              <p class="post-name">Я родилась в Рязани</p>
+              <p class="description">Рязань — один из древнейших городов России, основанный в XI веке. Город славится богатым историческим и культурным наследием, среди его достопримечательностей — Рязанский кремль и величественные православные храмы. Сегодня Рязань — это современный город, который сочетает традиции и современные черты, привлекая туристов своей атмосферой и живописными пейзажами на берегу реки Оки.</p>
+            </div>
+          </li>
+          <li class="post">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Главное_здание_МТУСИ.jpg/1200px-Главное_здание_МТУСИ.jpg" class="post-image">
+            <div class="post-content">
+              <p class="post-name">Сейчас я учусь в МТУСИ</p>
+              <p class="description">Московский технический университет связи и информатики (МТУСИ) — ведущий вуз России в области телекоммуникаций, информационных технологий и связи. Основанный в 1921 году, МТУСИ готовит специалистов в таких направлениях, как программирование, кибербезопасность, сети связи, радиотехника и управление в IT. Университет активно сотрудничает с российскими и международными IT-компаниями, обеспечивая студентам качественное образование и возможности для карьерного роста в высокотехнологичных отраслях.</p>
+            </div>
+          </li>
+      </ul>
+    </div>
+    <h2 class="cats-description">Это мои любимые домашние котики:</h2>
+    <div class="cats-slider">
+      <div class="cat-slider" id="cats1">
+        <div class="cat">
+          <p class="cat-name">Моя кошка Клеопатра</p>
+          <div class="cat-image">
+            <img src="foto/cat1.jpg" class="cat-image" alt="Клеопатра">
+          </div>
+        </div>
+      </div>
+      
+      <div class="cat-slider" id="cats2">
+        <div class="cat">
+          <p class="cat-name">А это её сын Марсель</p>
+          <div class="cat-image">
+            <img src="foto/cat2.jpg" class="cat-image" alt="Марсель">
+          </div>
+        </div>
+      </div>
+    
+      <button class="prev" id="cat-prev-btn"><</button>
+      <button class="next" id="cat-next-btn">></button>
+    </div>
+    <h2 class="music-description">Одна из моих любимых групп-System Of a Down,поэтому предлагаю вам послушать пару их песен:</h2>
+    <div class="music" id="music">
+        <audio class="audio-player" controls>
+            <source src="music/Chop Suey!.mp3" type="audio/mpeg">
+            <p class="music-name">Chop Suey!</p>
+        </audio>
+        <audio controls>
+            <source src="music/Toxicity.mp3" type="audio/mpeg">
+            <p class="music-name">Toxicity</p>
+        </audio>
+   </div>
+  </main>
+  <section class="sidebar" id="sidebar">
+    <div class="sidebar-posts">
+      <p class="sidebar-name">Немного котиков</p>
+      <ul class="sidebar-cats">
+        <li class="sidebar-list">
+          <img src="https://i.pinimg.com/564x/0e/4f/b3/0e4fb3b3ffe77242989a6ed8bd610aec.jpg" class="sidebar-image">
+        <li class="sidebar-list">
+          <img src="https://i.pinimg.com/564x/d7/d9/51/d7d951d3b1b0ac51b3362f3989973d65.jpg" class="sidebar-image">
+        </li>
+        <li class="sidebar-list">
+          <img src="https://i.pinimg.com/564x/ad/ae/1c/adae1c4889b7f1385e4ee32e4c8b723d.jpg" class="sidebar-image">
+        </li>
+        <li class="sidebar-list">
+          <img src="https://i.pinimg.com/564x/99/81/ef/9981ef3fbdc0f5f8e71c46083c2b4203.jpg" class="sidebar-image">
+        </li>
+    </div>
+    <div class="search">
+      <p class="sidebar-name">Поиск</p>
+      <form class="search-elements">
+        <input name="search" placeholder="Найти..." type="search" class="search-bar">
+        <button type="submit" class="search-button"></button>
+      </form>
+    </div>
+    <div class="mailing-bar">
+      <p class="sidebar-name">Рассылка</p>
+      <form>
+        <input name="email" placeholder="Ваш email адрес..." type="email" class="email-bar">
+        <button type="submit" class="email-button">Подписаться</button>
+      </form>
+    </div>
+  </section>
+ <footer>
+   <p class="contacts-description">Мои Контакты</p>
+   <div id="contacts">
+     <ul>
+       <li class="social-contacts">
+         <button class="social">
+           <a href="https://vk.com/zhongli.simp">
+             <img src="https://i.pinimg.com/564x/7e/7d/67/7e7d67f534e63f2ff89c9ea642014649.jpg" alt="Иконка">
+           </a>
+         </button>
+       </li>
+       <li class="social-contacts">
+         <button class="social">    
+           <a href="https://github.com/LinnaGDm">
+             <img src="https://i.pinimg.com/564x/64/88/0b/64880b9b0fe5b53bbe3f7280d262b33f.jpg" alt="Иконка">
+           </a>
+         </button>
+       </li>
+       <li class="social-contacts">
+         <button class="social">
+           <a href="https://t.me/seba69xxx">
+             <img src="https://i.pinimg.com/564x/6d/d6/64/6dd66450eb9bd3763d373f3cddebb3ad.jpg" alt="Иконка">
+           </a>
+         </button>
+       </li>
+     </ul>
+   </div>
+ </footer>
+ <script src="script.js"></script>
+</body>
+</html>

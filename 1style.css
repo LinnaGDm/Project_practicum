@@ -1,0 +1,516 @@
+@font-face { 
+    font-family: "Jura-Regular";
+    font-weight: 400;
+    src: local("Jura"), url("font/Jura/Jura-VariableFont_wght.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Jura-Bold";
+    font-weight: 800;
+    src: local("Jura"), url("font/Jura/Jura-VariableFont_wght.ttf") format("truetype");
+  }
+header {
+    font-family:'Jura-Bold', sans-serif;
+    background-color: 	#2a231d;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://img1.akspic.ru/crops/9/1/6/7/6/167619/167619-oranzhevo_chernaya_tekstura-apelsin-tekstura-chernyy-abstraktnoe_iskusstvo-1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+  }
+  .logo {
+    width: 40%;
+    height: 30%;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+  }
+  .navigation ul {
+    width: 40%;
+    height: 20%;
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    margin-top: 4%;
+    margin-right: 0;
+    font-size: 21px;
+  }
+  .navigation ul li {
+    margin-right: 5%;
+  }
+  .navigation ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+body {
+    background-color:#2a231d;
+    font-family: 'Jura-Regular', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+.aboutme {
+    display: flex;
+    margin-left: 100px;
+    width:70%;
+    margin-top: 3%;
+}
+.aboutme ul {
+    list-style: none;
+}
+.post {
+  background-color: #8a7664;
+  border-radius: 50px;
+  display: flex;
+  align-items: center; 
+  justify-content: start;
+  height: 300px; 
+  width: 75%;
+  margin-bottom: 60px;
+  padding: 20px;
+}
+.post-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 30px; 
+  border-radius: 50%; 
+}
+.post-content {
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.post-name {
+  font-family: 'Jura-Bold', sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+.sidebar {
+  display:flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60%;
+  right: 10%;
+  font-family: 'Jura-Regular', sans-serif;
+}
+.sidebar-name {
+  font-family:'Jura-Bold', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 0;
+}
+.sidebar-list {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 10%;
+  padding-right: 37px;
+}
+.sidebar-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  }
+.search {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Jura-Regular', sans-serif;
+  align-items: center; 
+}
+.search-elements {
+  display: flex;
+  flex-direction: row;
+}
+.search-bar {
+  font-family: 'Jura-Regular', sans-serif;
+  width: 90%;
+  height: 50px;
+  background-color: #f4f7f6;
+  border: none;
+  margin-left: 0;
+}
+.search-button {
+  display:flex;
+  background: url("foto/loop.png") no-repeat center;
+  background-size: 18px 18px;
+  width: 50px;
+  height: 50px;
+  background-color: #8a7664;
+  border: none;
+}
+.email-bar {
+  display: flex;
+  font-family: 'Jura-Regular', sans-serif;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #f4f7f6;
+  border: none;
+}
+.email-button {
+  display:flex;
+  flex-direction: column;
+  font-family: 'Jura-Bold', sans-serif;
+  justify-content: center;
+  align-items: center; 
+  color: #ffffff;
+  width: 100%;
+  height: 50px;
+  background-color:#8a7664;
+  border: none;
+  margin-top: 10%;
+}
+.cats {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.cat {
+  background-color: #8a7664;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50%;
+  width: 60%; 
+  margin:3% 20%;
+}
+.cat-name {
+  flex: 1;
+  margin-left: 17%;
+  margin-right: 8%;
+}
+.cat-image {
+  width: 60%;  
+  height: 90%;
+  object-fit: cover;
+  margin:2% 5% 2% 15%;  
+  border-radius: 30%;  
+  order: 2; 
+}
+.cats-description {
+  text-align: center; 
+}
+.music-description {
+  flex: 1;
+  text-align: center;
+}
+.music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px;
+    background-color: #362e27;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 3%;
+}
+.music audio {
+    width: 100%;
+    max-width: 500px;
+    outline: none;
+    border-radius: 10px;
+}
+.music-name {
+    font-family: 'Jura-Regular', sans-serif;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin-top: 5px;
+}
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    background-color: #8a7664;
+    color: #fff;
+    border-radius: 10px;
+}
+audio {
+   background-color: #8a7664;
+    padding: 10px;
+    border-radius: 10px;
+}
+.contacts {
+  display: flex;
+  flex-direction: row;
+}
+footer {
+  background-color: #333; 
+  padding: 20px 0;
+  margin-top: 5%;
+}
+.contacts-description {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Jura-Regular', sans-serif;
+}
+#contacts ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+.social-contacts {
+  margin: 0 15px;
+}
+.social {
+  background: none; 
+  border: none; 
+}
+.social img {
+  border-radius: 10px;
+  width: 2.5em;
+  height: 2.5em; 
+  transition: transform 0.3s ease; 
+}
+.social img:hover {
+  transform: scale(1.1); 
+}
+@media (max-width: 768px) {
+  header {
+      height: 30%;
+  }
+
+  .logo {
+      width: 35%;
+      height: 20%;
+      top: 15px;
+      left: 20px;
+  }
+
+  .navigation {
+      display: none;
+  }
+
+  .sidebar {
+      display: none;
+  }
+
+  .post {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      width: 90%;
+      padding: 10px;
+  }
+
+  .post-image {
+      width: 120px;
+      height: 120px;
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .post-content {
+      text-align: center;
+  }
+
+  .search-bar,
+  .email-bar {
+      width: 100%;
+  }
+
+  .cats {
+      flex-direction: column;
+      align-items: center;
+      margin: 5%;
+  }
+
+  .cat {
+      width: 90%;
+      height: auto;
+  }
+
+  .cat-image {
+      width: 30%;
+      height: auto;
+  }
+
+  .music {
+      width: 100%;
+      padding: 15px;
+      margin-top: 20px;
+  }
+
+  footer {
+      padding: 15px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+      height: 25%;
+  }
+
+  .logo {
+      width: 50%;
+      height: 20%;
+      top: 10px;
+      left: 10px;
+  }
+
+  .aboutme {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 20%;
+  }
+
+  .post {
+      height: auto;
+      width: 95%;
+  }
+
+  .search-bar,
+  .email-bar {
+      width: 100%;
+      font-size: 14px;
+  }
+
+  .cats {
+      flex-direction: column;
+      margin: 5%;
+  }
+
+  .cat {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+  }
+
+  .cat-image {
+      width: 50%;
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .music {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+  }
+
+  footer {
+      padding: 10px 0;
+  }
+}
+.theme-switcher {
+  margin-top: 30%;
+  margin-left: 8%;
+}
+#theme-selector {
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Jura-Regular', sans-serif;
+  background-color:  #362e27; 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#theme-selector:hover {
+  background-color: 	#8a7664;
+  transform: translateY(-2px);
+}
+
+#theme-selector:active {
+  transform: translateY(0);
+}
+
+#more-text {
+  display: none;
+  color: #333;  
+  font-size: 16px;  
+  background-color: #8a7664;  
+  color: #ffffff;
+  padding: 12px;  
+  border-radius: 8px;  
+  font-family: 'Jura-Regular', sans-serif; 
+}
+
+#show-more {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 0;
+  padding: 7px 20px;
+  font-size: 16px;
+  font-family: 'Jura-Regular', sans-serif;  
+  background-color: #362e27;  
+  color: white;  
+  border: none; 
+  border-radius: 8px;  
+  cursor: pointer;  
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+#show-more:hover {
+  background-color: #8a7664; 
+  transform: translateY(-2px);  
+}
+
+#show-more:active {
+  transform: translateY(0); 
+}
+
+
+body.light-theme {
+  background-color: 	#c6bca8;
+  color: #000000;
+
+}
+
+body.light-theme .slider-btn {
+  background-color: #ccc;
+}
+body.dark-theme {
+  background-color: #2a231d;
+  color: #ffffff;
+}
+
+body.dark-theme .slider-btn {
+  background-color: #555;
+}
+
+.cats-slider {
+  position: relative;
+}
+#cat-prev-btn, #cat-next-btn {
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%);
+  background-color: #362e27;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+#cat-prev-btn {
+  left: 15%;
+}
+
+#cat-next-btn {
+  right: 15%;
+}
